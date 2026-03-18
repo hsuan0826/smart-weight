@@ -28,6 +28,7 @@ class User(Base):
 
     target_wt = Column(Float)
     height = Column(Float)
+    bio = Column(String)
     created_at = Column(DateTime,
                         nullable = False, 
                         server_default = func.now()
