@@ -12,7 +12,7 @@ class User(Base):
     email = Column(String,
                    unique = True,
                    nullable = False)
-    
+    gender = Column(String)
     password_hash = Column(String(60), 
                            nullable = False)
     
